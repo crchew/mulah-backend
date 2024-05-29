@@ -4,6 +4,6 @@
 [dev]
   framework = "vite"
   command = "vite"
-  publish = "dist"
+  publish = "src"
   targetPort = 5173
   port = 8888
