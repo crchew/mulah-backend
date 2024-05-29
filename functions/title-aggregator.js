@@ -15,6 +15,8 @@ module.exports.handler = async function (event, context) {
 
     const htmlContent = await page.content();
 
+    console.log("Returning status...");
+
     return {
       statusCode: 200,
       body: htmlContent,
