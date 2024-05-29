@@ -6,7 +6,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/.netlify/functions/title-aggregator")
+    fetch("functions/title-aggregator")
       .then((response) => response.text())
       .then((htmlContent) => {
         setTitles(htmlContent);
